@@ -38,7 +38,7 @@ plt.ylabel('I axm the y axis')
 plt.show()
 
 # Visualizing the Regression results (high res, smooth curve)
-x_grid = np.arange(min(x), max(x), 0.1) # (graph low end, graph high end, step)
+x_grid = np.arrange(min(x), max(x), 0.1) # (graph low end, graph high end, step)
 x_grid = x_grid.reshape((len(x_grid), 1))
 plt.scatter(x,y,color = "blue")
 plt.plot(x_grid, regressor.predict(x_grid), color = "black") # Here we predict values using the x_grid we created above
